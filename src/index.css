@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: rgb(104, 11, 167);
+}
+
+.container {
+  margin: 0 auto;
+  background-color: white;
+  min-height: 90vh;
+  padding: 1.5rem;
+  margin-top: 1em;
+  border-radius: 10px;
+}
+
+.notes-layout {
+  margin-top: 1em;
+  padding: 0.7em 0.5em;
+  border: 1px solid rgb(214, 212, 212);
+  border-radius: 5px;
+}
+
+.note-item {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+}
+
+.title {
+  background-color: lightgray;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.title-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+span.notice {
+  display: flex;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.success {
+  background-color: green;
+  color: white;
+}
+
+button {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  padding: 0.4em 0.4em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.edit-form {
+  margin-top: 1em;
+  background-color: rgb(243, 167, 26);
+  padding: 1em;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-form label {
+  font-size: 0.85em;
+  margin-right: 2px;
+}
+
+.edit-form input {
+  padding: 5px;
+  margin-right: 1em;
+}
+
+.edit-form .w-25 {
+  width: 100%;
+}
+
+.edit-form .w-50 {
+  width: 100%;
+}
+
+.edit {
+  background-color: orange;
+  float: right;
+}
+
+.details {
+  background-color: blue;
+  color: white;
+  float: right;
+}
+
+.update {
+  background-color: green;
+  color: white;
+}
+
+.delete {
+  background-color: darkred;
+  color: white;
+  float: right;
+  margin-right: 3px;
+}
+
+.create {
+  background-color: green;
+  color: white;
+  float: right;
+  width: 100%;
+  margin-top:  0.5em;
+  max-width: 100px;
+} 
+
+.close {
+  float: right;
+  background-color: rgb(167, 7, 7);
+  color: white;
+  margin-left: 2px;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media screen and (max-width: 600px) {
+
+  .edit-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .create {
+    max-width: 100%;
+  }
+ 
+}
